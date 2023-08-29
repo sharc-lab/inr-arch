@@ -1,0 +1,83 @@
+digraph {
+  "root" [label="DivBackward0\nother = tensor(189)", style=filled, fillcolor="#ffffff"];
+  "root.0" [label="SelectBackward0\ndim = 1\nindex = 2\nself_sizes = (4096, 3)", style=filled, fillcolor="#ffffff"];
+  "root.0.0" [label="AddBackward0\nalpha = 1", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0" [label="MmBackward0\nmat2 = Tensor(256×3)\nmat2_sizes = (256, 3)\nmat2_strides = (1, 256)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0" [label="SinBackward0\nself = Tensor(4096×256)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0" [label="MulBackward0\nother = tensor(30)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0" [label="AddBackward0\nalpha = 1", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (1, 256)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0" [label="SinBackward0\nself = Tensor(4096×256)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0" [label="MulBackward0\nother = tensor(30)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0" [label="AddBackward0\nalpha = 1", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (1, 256)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0" [label="SinBackward0\nself = Tensor(4096×256)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0" [label="MulBackward0\nother = tensor(30)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0" [label="AddBackward0\nalpha = 1", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (1, 256)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0" [label="SinBackward0\nself = Tensor(4096×256)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0" [label="MulBackward0\nother = tensor(30)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0" [label="AddBackward0\nalpha = 1", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0" [label="MmBackward0\nmat2 = Tensor(2×256)\nmat2_sizes = (2, 256)\nmat2_strides = (1, 2)\nself = Tensor(4096×2)\nself_sizes = (4096, 2)\nself_strides = (2, 1)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0" [label="AccumulateGrad", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1" [label="PermuteBackward0\ndims = (-1, -2)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0" [label="AccumulateGrad", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1" [label="UnsqueezeBackward0\ndim = -2", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0" [label="AccumulateGrad", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1" [label="PermuteBackward0\ndims = (-1, -2)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0" [label="AccumulateGrad", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1" [label="UnsqueezeBackward0\ndim = -2", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0" [label="AccumulateGrad", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0.0"
+  "root.0.0.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0.0.0"
+  "root.0.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0.0"
+  "root.0.0.0.0.0.0.0.0.0.0.0.1" [label="PermuteBackward0\ndims = (-1, -2)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.1.0" [label="AccumulateGrad", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.0.1" -> "root.0.0.0.0.0.0.0.0.0.0.0.1.0"
+  "root.0.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0.1"
+  "root.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.0"
+  "root.0.0.0.0.0.0.0.0.0.0.1" [label="UnsqueezeBackward0\ndim = -2", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.1.0" [label="AccumulateGrad", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.0.0.0.1" -> "root.0.0.0.0.0.0.0.0.0.0.1.0"
+  "root.0.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0.1"
+  "root.0.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0.0"
+  "root.0.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0.0"
+  "root.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.0"
+  "root.0.0.0.0.0.0.0.1" [label="PermuteBackward0\ndims = (-1, -2)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.1.0" [label="AccumulateGrad", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.0.1" -> "root.0.0.0.0.0.0.0.1.0"
+  "root.0.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0.1"
+  "root.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.0"
+  "root.0.0.0.0.0.0.1" [label="UnsqueezeBackward0\ndim = -2", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.1.0" [label="AccumulateGrad", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.0.0.0.1" -> "root.0.0.0.0.0.0.1.0"
+  "root.0.0.0.0.0.0" -> "root.0.0.0.0.0.0.1"
+  "root.0.0.0.0.0" -> "root.0.0.0.0.0.0"
+  "root.0.0.0.0" -> "root.0.0.0.0.0"
+  "root.0.0.0" -> "root.0.0.0.0"
+  "root.0.0.0.1" [label="PermuteBackward0\ndims = (-1, -2)", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.1.0" [label="AccumulateGrad", style=filled, fillcolor="#ffffff"];
+  "root.0.0.0.1" -> "root.0.0.0.1.0"
+  "root.0.0.0" -> "root.0.0.0.1"
+  "root.0.0" -> "root.0.0.0"
+  "root.0.0.1" [label="UnsqueezeBackward0\ndim = -2", style=filled, fillcolor="#ffffff"];
+  "root.0.0.1.0" [label="AccumulateGrad", style=filled, fillcolor="#ffffff"];
+  "root.0.0.1" -> "root.0.0.1.0"
+  "root.0.0" -> "root.0.0.1"
+  "root.0" -> "root.0.0"
+  "root" -> "root.0"
+}

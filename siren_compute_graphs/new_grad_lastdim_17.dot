@@ -1,0 +1,244 @@
+digraph {
+  "n12" -> "n11"
+  "n11" -> "n10"
+  "n10" -> "n9"
+  "n9" -> "n8"
+  "n8" -> "n7"
+  "n7" -> "n6"
+  "n25" -> "n24"
+  "n24" -> "n23"
+  "n23" -> "n22"
+  "n22" -> "n21"
+  "n42" -> "n41"
+  "n11" -> "n41"
+  "n41" -> "n40"
+  "n44" -> "n43"
+  "n43" -> "n40"
+  "n40" -> "n39"
+  "n39" -> "n38"
+  "n38" -> "n37"
+  "n46" -> "n45"
+  "n45" -> "n37"
+  "n37" -> "n36"
+  "n48" -> "n47"
+  "n47" -> "n36"
+  "n36" -> "n35"
+  "n35" -> "n34"
+  "n34" -> "n33"
+  "n50" -> "n49"
+  "n49" -> "n33"
+  "n33" -> "n32"
+  "n52" -> "n51"
+  "n51" -> "n32"
+  "n32" -> "n31"
+  "n31" -> "n30"
+  "n30" -> "n29"
+  "n54" -> "n53"
+  "n53" -> "n29"
+  "n29" -> "n28"
+  "n56" -> "n55"
+  "n55" -> "n28"
+  "n28" -> "n27"
+  "n27" -> "n26"
+  "n26" -> "n21"
+  "n21" -> "n20"
+  "n20" -> "n19"
+  "n53" -> "n57"
+  "n57" -> "n19"
+  "n19" -> "n18"
+  "n31" -> "n58"
+  "n58" -> "n18"
+  "n18" -> "n17"
+  "n17" -> "n16"
+  "n49" -> "n59"
+  "n59" -> "n16"
+  "n16" -> "n15"
+  "n35" -> "n60"
+  "n60" -> "n15"
+  "n15" -> "n14"
+  "n14" -> "n13"
+  "n45" -> "n61"
+  "n61" -> "n13"
+  "n13" -> "n6"
+  "n6" -> "n5"
+  "n39" -> "n63"
+  "n63" -> "n62"
+  "n62" -> "n5"
+  "n5" -> "n4"
+  "n7" -> "n72"
+  "n39" -> "n73"
+  "n73" -> "n72"
+  "n72" -> "n71"
+  "n61" -> "n74"
+  "n74" -> "n71"
+  "n71" -> "n70"
+  "n70" -> "n69"
+  "n16" -> "n69"
+  "n69" -> "n68"
+  "n35" -> "n76"
+  "n76" -> "n75"
+  "n75" -> "n68"
+  "n68" -> "n67"
+  "n70" -> "n85"
+  "n60" -> "n85"
+  "n85" -> "n84"
+  "n59" -> "n86"
+  "n86" -> "n84"
+  "n84" -> "n83"
+  "n83" -> "n82"
+  "n19" -> "n82"
+  "n82" -> "n81"
+  "n31" -> "n88"
+  "n88" -> "n87"
+  "n87" -> "n81"
+  "n81" -> "n80"
+  "n83" -> "n96"
+  "n58" -> "n96"
+  "n96" -> "n95"
+  "n57" -> "n97"
+  "n97" -> "n95"
+  "n95" -> "n94"
+  "n94" -> "n93"
+  "n22" -> "n93"
+  "n93" -> "n92"
+  "n27" -> "n99"
+  "n99" -> "n98"
+  "n98" -> "n92"
+  "n92" -> "n91"
+  "n91" -> "n90"
+  "n53" -> "n100"
+  "n100" -> "n90"
+  "n90" -> "n89"
+  "n31" -> "n101"
+  "n101" -> "n89"
+  "n89" -> "n80"
+  "n80" -> "n79"
+  "n79" -> "n78"
+  "n49" -> "n102"
+  "n102" -> "n78"
+  "n78" -> "n77"
+  "n35" -> "n103"
+  "n103" -> "n77"
+  "n77" -> "n67"
+  "n67" -> "n66"
+  "n66" -> "n65"
+  "n45" -> "n104"
+  "n104" -> "n65"
+  "n65" -> "n64"
+  "n39" -> "n105"
+  "n105" -> "n64"
+  "n64" -> "n4"
+  "n4" -> "n3"
+  "n3" -> "n2"
+  "n11" -> "n106"
+  "n106" -> "n2"
+  "n2" -> "n1"
+  "n1" -> "n0"
+  "n0" [label="DivBackward0\nother = tensor(189)"];
+  "n1" [label="SelectBackward0\ndim = 1\nindex = 0\nself_sizes = (4096, 2)"];
+  "n2" [label="MmBackward0\nmat2 = Tensor(256×2)\nmat2_sizes = (256, 2)\nmat2_strides = (2, 1)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)"];
+  "n3" [label="MulBackward0\nother = tensor(30)"];
+  "n4" [label="AddBackward0\nalpha = 1"];
+  "n5" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n6" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n7" [label="MulBackward0\nother = tensor(30)"];
+  "n8" [label="MmBackward0\nmat2_sizes = (2, 256)\nmat2_strides = (1, 2)\nself = Tensor(4096×2)\nself_sizes = (4096, 2)\nself_strides = ()"];
+  "n9" [label="TBackward0"];
+  "n10" [label="TBackward0"];
+  "n11" [label="PermuteBackward0\ndims = (-1, -2)"];
+  "n12" [label="AccumulateGrad"];
+  "n13" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (256, 1)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)"];
+  "n14" [label="MulBackward0\nother = tensor(30)"];
+  "n15" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n16" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (256, 1)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)"];
+  "n17" [label="MulBackward0\nother = tensor(30)"];
+  "n18" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n19" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (256, 1)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)"];
+  "n20" [label="MulBackward0\nother = tensor(30)"];
+  "n21" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n22" [label="MmBackward0\nmat2_sizes = (3, 256)\nmat2_strides = (256, 1)\nself = Tensor(4096×3)\nself_sizes = (4096, 3)\nself_strides = ()"];
+  "n23" [label="TBackward0"];
+  "n24" [label="PermuteBackward0\ndims = (-1, -2)"];
+  "n25" [label="AccumulateGrad"];
+  "n26" [label="CosBackward0\nself = Tensor(4096×256)"];
+  "n27" [label="MulBackward0\nother = tensor(30)"];
+  "n28" [label="AddBackward0\nalpha = 1"];
+  "n29" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (1, 256)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)"];
+  "n30" [label="SinBackward0\nself = Tensor(4096×256)"];
+  "n31" [label="MulBackward0\nother = tensor(30)"];
+  "n32" [label="AddBackward0\nalpha = 1"];
+  "n33" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (1, 256)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)"];
+  "n34" [label="SinBackward0\nself = Tensor(4096×256)"];
+  "n35" [label="MulBackward0\nother = tensor(30)"];
+  "n36" [label="AddBackward0\nalpha = 1"];
+  "n37" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (1, 256)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)"];
+  "n38" [label="SinBackward0\nself = Tensor(4096×256)"];
+  "n39" [label="MulBackward0\nother = tensor(30)"];
+  "n40" [label="AddBackward0\nalpha = 1"];
+  "n41" [label="MmBackward0\nmat2 = Tensor(2×256)\nmat2_sizes = (2, 256)\nmat2_strides = (1, 2)\nself = Tensor(4096×2)\nself_sizes = (4096, 2)\nself_strides = (2, 1)"];
+  "n42" [label="AccumulateGrad"];
+  "n43" [label="UnsqueezeBackward0\ndim = -2"];
+  "n44" [label="AccumulateGrad"];
+  "n45" [label="PermuteBackward0\ndims = (-1, -2)"];
+  "n46" [label="AccumulateGrad"];
+  "n47" [label="UnsqueezeBackward0\ndim = -2"];
+  "n48" [label="AccumulateGrad"];
+  "n49" [label="PermuteBackward0\ndims = (-1, -2)"];
+  "n50" [label="AccumulateGrad"];
+  "n51" [label="UnsqueezeBackward0\ndim = -2"];
+  "n52" [label="AccumulateGrad"];
+  "n53" [label="PermuteBackward0\ndims = (-1, -2)"];
+  "n54" [label="AccumulateGrad"];
+  "n55" [label="UnsqueezeBackward0\ndim = -2"];
+  "n56" [label="AccumulateGrad"];
+  "n57" [label="TBackward0"];
+  "n58" [label="CosBackward0\nself = Tensor(4096×256)"];
+  "n59" [label="TBackward0"];
+  "n60" [label="CosBackward0\nself = Tensor(4096×256)"];
+  "n61" [label="TBackward0"];
+  "n62" [label="NegBackward0"];
+  "n63" [label="SinBackward0\nself = Tensor(4096×256)"];
+  "n64" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n65" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (256, 1)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)"];
+  "n66" [label="MulBackward0\nother = tensor(30)"];
+  "n67" [label="AddBackward0\nalpha = 1"];
+  "n68" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n69" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n70" [label="MulBackward0\nother = tensor(30)"];
+  "n71" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (1, 256)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)"];
+  "n72" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n73" [label="CosBackward0\nself = Tensor(4096×256)"];
+  "n74" [label="TBackward0"];
+  "n75" [label="NegBackward0"];
+  "n76" [label="SinBackward0\nself = Tensor(4096×256)"];
+  "n77" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n78" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (256, 1)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)"];
+  "n79" [label="MulBackward0\nother = tensor(30)"];
+  "n80" [label="AddBackward0\nalpha = 1"];
+  "n81" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n82" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n83" [label="MulBackward0\nother = tensor(30)"];
+  "n84" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (1, 256)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)"];
+  "n85" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n86" [label="TBackward0"];
+  "n87" [label="NegBackward0"];
+  "n88" [label="SinBackward0\nself = Tensor(4096×256)"];
+  "n89" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n90" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (256, 1)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)"];
+  "n91" [label="MulBackward0\nother = tensor(30)"];
+  "n92" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n93" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n94" [label="MulBackward0\nother = tensor(30)"];
+  "n95" [label="MmBackward0\nmat2 = Tensor(256×256)\nmat2_sizes = (256, 256)\nmat2_strides = (1, 256)\nself = Tensor(4096×256)\nself_sizes = (4096, 256)\nself_strides = (256, 1)"];
+  "n96" [label="MulBackward0\nother = Tensor(4096×256)\nself = Tensor(4096×256)"];
+  "n97" [label="TBackward0"];
+  "n98" [label="NegBackward0"];
+  "n99" [label="SinBackward0\nself = Tensor(4096×256)"];
+  "n100" [label="TBackward0"];
+  "n101" [label="CosBackward0\nself = Tensor(4096×256)"];
+  "n102" [label="TBackward0"];
+  "n103" [label="CosBackward0\nself = Tensor(4096×256)"];
+  "n104" [label="TBackward0"];
+  "n105" [label="CosBackward0\nself = Tensor(4096×256)"];
+  "n106" [label="TBackward0"];
+}

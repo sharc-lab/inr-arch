@@ -1,0 +1,16 @@
+open_project -reset model_top_vitis_hls_project
+
+add_files inr_hw_lib.h
+add_files model.h
+add_files model.cpp
+
+add_files -tb testbench.cpp
+add_files -tb testbench_data
+
+set_top model_top
+
+open_solution "solution1" -flow_target vitis
+set_part {{fpga_part}}
+create_clock -period {{clock_speed}} -name default
+
+csynth_design

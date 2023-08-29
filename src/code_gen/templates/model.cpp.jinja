@@ -1,0 +1,7 @@
+#include "model.h"
+
+
+// Model Parameters //
+{% for param in model_parameters %}
+W_TYPE {{ param.name }}_fixed{% for dim in param.shape %}[{{ dim }}]{% endfor %};
+{% endfor %}

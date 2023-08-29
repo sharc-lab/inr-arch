@@ -1,0 +1,9 @@
+test_load_stream: PASS
+test_copy_stream: PASS
+test_elementwise_functions: PASS
+test_transpose: PASS
+test_stream_block_adapter: PASS
+test_select: PASS
+test_repeat_singleton_dim_2d: PASS
+test_mm: PASS
+test_mm_v2: PASS
